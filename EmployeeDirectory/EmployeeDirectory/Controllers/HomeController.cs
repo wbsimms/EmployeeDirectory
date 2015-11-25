@@ -21,8 +21,9 @@ namespace EmployeeDirectory.Controllers
 			this.allRecords = this.repository.GetAll();
 		}
 
-		public ActionResult Index()
+		public ActionResult Index(bool isAdmin = false)
 		{
+			ViewBag.IsAdmin = isAdmin;
 			return View();
 		}
 

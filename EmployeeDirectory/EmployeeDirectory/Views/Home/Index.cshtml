@@ -1,9 +1,10 @@
 ﻿@{
     ViewBag.Title = "Yea!";
+    var isAdmin  = false || (ViewBag.IsAdmin || User.IsInRole("Admin"));
 }
 
 <div class="row">
-    <div id="grid"></div>
+    <div id="grid" data-isAdminRole="@isAdmin"></div>
 </div>
 
 <div class="row">
@@ -23,7 +24,6 @@
         </p>
     </div>
 </div>
-
 
 @section scripts
 {
