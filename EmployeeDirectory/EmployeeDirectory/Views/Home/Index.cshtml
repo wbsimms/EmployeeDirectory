@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Yea!";
+}
+
+<div class="row">
+    <div id="grid"></div>
+</div>
+
+<div class="row">
+    <div class="col-md-1 col-md-offset-2">
+        <p/>
+    </div>
+    <div class="col-md-4">
+        <h2>My GitHub</h2>
+        <p>
+            <a class="btn btn-default" href="http://github.com/wbsimms">My GitHub</a>
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>Hire me</h2>
+        <p>
+            <a class="btn btn-default" href="http://wbsimms.com">About</a>
+        </p>
+    </div>
+</div>
+
+
+@section scripts
+{
+    @Scripts.Render("/Scripts/index.js")
+}
